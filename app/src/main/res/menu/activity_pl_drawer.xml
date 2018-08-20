@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_warning_black_24dp"
+            android:title="Risk Assessment" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_toc_black_24dp"
+            android:title="To Do List" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_error_black_24dp"
+            android:title="Danger" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="Must Know" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_child_care_black_24dp"
+            android:title="Baby" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_contact_phone_black_24dp"
+            android:title="HelpLine" />
+        <item
+            android:id="@+id/nav_se"
+            android:icon="@drawable/ic_filter_frames_black_24dp"
+            android:title="Calendar" />
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Maternity App</string>
+    <string name="radio_anm">ANM</string>
+    <string name="title_activity_pl">PLActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="click_here">Click Here</string>
+    <string name="if_you_find_any_one_of_these_symptoms_call_to_the_number_below">If you find any one of these symptoms call to the number below!</string>
+    <string name="title_activity_ra">RaActivity</string>
+
+
+</resources>
