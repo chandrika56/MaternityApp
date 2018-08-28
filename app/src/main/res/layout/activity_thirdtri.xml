@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="7th Month"
+        android:text="@string/_7th_month"
         android:textSize="20dp"/>
 
     <TextView
@@ -23,7 +23,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="81dp"
-        android:text="Visit your doctor"
+        android:text="@string/visit_your_doctor"
         android:textSize="20dp"
         android:layout_alignParentLeft="true" />
 
@@ -34,7 +34,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="129dp"
-        android:text="ANM Visit"
+        android:text="@string/anm_visit"
         android:textSize="20dp"
         android:layout_alignParentLeft="true" />
 
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView29"
         android:layout_alignParentEnd="true"
-        android:text="No"
+        android:text="@string/no"
         android:layout_alignParentRight="true" />
 
     <CheckBox
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView29"
         android:layout_toStartOf="@+id/checkBox31"
-        android:text="Yes"
+        android:text="@string/yes"
         android:layout_toLeftOf="@+id/checkBox31" />
 
     <CheckBox
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView30"
         android:layout_toStartOf="@+id/checkBox31"
-        android:text="Yes"
+        android:text="@string/yes"
         android:layout_toLeftOf="@+id/checkBox31" />
 
     <CheckBox
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView30"
         android:layout_alignParentEnd="true"
-        android:text="No"
+        android:text="@string/no"
         android:layout_alignParentRight="true" />
 
     <TextView
@@ -81,7 +81,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="196dp"
-        android:text="8th Month"
+        android:text="@string/_8th_month"
         android:textSize="20dp"/>
 
     <TextView
@@ -90,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:text="ANM Visit"
+        android:text="@string/anm_visit"
         android:textSize="20dp"
 
         android:layout_alignParentLeft="true" />
@@ -101,7 +101,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:text="No"
+        android:text="@string/no"
         android:layout_alignParentRight="true" />
 
     <CheckBox
@@ -110,7 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_toStartOf="@+id/checkBox31"
-        android:text="Yes"
+        android:text="@string/yes"
         android:layout_toLeftOf="@+id/checkBox31" />
 
     <TextView
@@ -120,7 +120,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="196dp"
-        android:text="9th Month"
+        android:text="@string/_9th_month"
         android:textSize="20dp"/>
 
     <TextView
@@ -130,7 +130,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="144dp"
-        android:text="Visit your doctor"
+        android:text="@string/visit_your_doctor"
         android:textSize="20dp"
         android:layout_alignParentLeft="true" />
 
@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView34"
         android:layout_alignParentEnd="true"
-        android:text="No"
+        android:text="@string/no"
         android:layout_alignParentRight="true" />
 
     <CheckBox
@@ -149,7 +149,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView34"
         android:layout_toStartOf="@+id/checkBox31"
-        android:text="Yes"
+        android:text="@string/yes"
         android:layout_toLeftOf="@+id/checkBox31" />
 
     <TextView
@@ -160,7 +160,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="101dp"
-        android:text="2 Days before EDD get admitted"
+        android:text="@string/_2_days_before_edd_get_admitted"
         android:textSize="20dp" />
 
     <CheckBox
@@ -169,7 +169,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView35"
         android:layout_alignParentEnd="true"
-        android:text="No"
+        android:text="@string/no"
         android:layout_alignParentRight="true" />
 
     <CheckBox
@@ -178,7 +178,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/checkBox39"
         android:layout_toStartOf="@+id/checkBox31"
-        android:text="Yes"
+        android:text="@string/yes"
         android:layout_toLeftOf="@+id/checkBox31" />
 
     <Button
@@ -188,5 +188,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="22dp"
-        android:text="Save" />
+        android:background="@drawable/mybutton2"
+        android:text="@string/save" />
 </RelativeLayout>

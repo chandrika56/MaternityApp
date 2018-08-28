@@ -19,12 +19,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    //defining views
-    private Button buttonSignIn;
-    private EditText editTextEmail;
-    private EditText editTextPassword;
-    private TextView textViewSignup;
 
+    private EditText editTextMobile;
     //firebase auth object
     private FirebaseAuth firebaseAuth;
 
@@ -36,77 +32,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate (savedInstanceState);
         setContentView (R.layout.activity_main);
         firebaseAuth = FirebaseAuth.getInstance();
+        editTextMobile = findViewById(R.id.editTextMobile);
 
-        //if the objects getcurrentuser method is not null
-        //means user is already logged in
-        if(firebaseAuth.getCurrentUser() != null){
-            //close this activity
-            finish();
-            //opening profile activity
-            startActivity(new Intent (getApplicationContext(), PLActivity.class));
-        }
+        findViewById(R.id.buttonContinue).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        //initializing views
-        editTextEmail = (EditText) findViewById(R.id.editTextEmail);
-        editTextPassword = (EditText) findViewById(R.id.editTextPassword);
-        buttonSignIn = (Button) findViewById(R.id.buttonSignin);
-        textViewSignup  = (TextView) findViewById(R.id.textViewSignUp);
+                String mobile = editTextMobile.getText().toString().trim();
 
-        progressDialog = new ProgressDialog (this);
+                if(mobile.isEmpty() || mobile.length() < 10){
+                    editTextMobile.setError("Enter a valid mobile");
+                    editTextMobile.requestFocus();
+                    return;
+                }
 
-        //attaching click listener
-        buttonSignIn.setOnClickListener(this);
-        textViewSignup.setOnClickListener(this);
+                Intent intent = new Intent(MainActivity.this, VerifyPhoneActivity.class);
+                intent.putExtra("mobile", mobile);
+                startActivity(intent);
+            }
+        });
     }
 
-    //method for user login
-    private void userLogin(){
-        String email = editTextEmail.getText().toString().trim();
-        String password  = editTextPassword.getText().toString().trim();
+    @Override
+    public void onClick(View v) {
 
-
-        //checking if email and passwords are empty
-        if(TextUtils.isEmpty(email)){
-            Toast.makeText(this,"Please enter email",Toast.LENGTH_LONG).show();
-            return;
-        }
-
-        if(TextUtils.isEmpty(password)){
-            Toast.makeText(this,"Please enter password",Toast.LENGTH_LONG).show();
-            return;
-        }
-
-        //if the email and password are not empty
-        //displaying a progress dialog
-
-        progressDialog.setMessage("Registering Please Wait...");
-        progressDialog.show();
-
-        //logging in the user
-        firebaseAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult> () {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        progressDialog.dismiss();
-                        //if the task is successfull
-                        if(task.isSuccessful()){
-                            //start the profile activity
-                            finish();
-                            startActivity(new Intent(getApplicationContext(), PLActivity.class));
-                        }
-                    }
-                });
-
-    }
-
-    public void onClick(View view) {
-        if(view == buttonSignIn){
-            userLogin();
-        }
-
-        if(view == textViewSignup){
-            finish();
-            startActivity(new Intent (this, SignUpActivity.class));
-        }
     }
 }

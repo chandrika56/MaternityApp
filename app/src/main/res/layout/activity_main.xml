@@ -10,51 +10,61 @@
     android:background="@color/smoke"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_centerVertical="true"
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="200dp"
+
+        android:orientation="horizontal">
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageView"
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="User Login"
-            android:id="@+id/textView"
-            android:layout_gravity="center_horizontal" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="@string/may_i_ask_your_phone_number"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="@color/colorPrimary" />
 
         <EditText
-            android:id="@+id/editTextEmail"
+            android:id="@+id/editTextMobile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:hint="Enter email"
-            android:inputType="textEmailAddress" />
-
-        <EditText
-            android:id="@+id/editTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:hint="Enter password"
-            android:inputType="textPassword" />
+            android:layout_below="@id/textView"
+            android:layout_marginTop="20dp"
+            android:digits="0123456789"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="@string/enter_your_mobile_number"
+            android:inputType="phone"
+            android:maxLength="10" />
 
         <Button
-            android:id="@+id/buttonSignin"
-            android:layout_width="match_parent"
+            android:id="@+id/buttonContinue"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Login!" />
+            android:layout_below="@id/editTextMobile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/cont"
+            android:textAllCaps="false"
+            android:textColor="#cdd8f1" />
 
-        <TextView
-            android:id="@+id/textViewSignUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Not have an account? Signup Here"
-            android:textAlignment="center" />
-
-    </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>
+

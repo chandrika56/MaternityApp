@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.android.maternityapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -8,32 +9,154 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        tools:overrideLibrary="sun.bob.mcalendarview">
+        <activity
+            android:name=".LangActivity"
+            android:label="@string/title_activity_pl"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".CalActivity"
+            android:label="@string/calendar" />
+        <activity
+            android:name=".HelpLineActivity"
+            android:label="@string/helpline" />
+        <activity
+            android:name=".DangerActivity"
+            android:label="@string/danger" />
+        <activity
+            android:name=".MustKnowActivity"
+            android:label="@string/must_know" />
+        <activity
+            android:name=".RaActivity"
+            android:label="@string/risk_assessment" />
+        <activity
+            android:name=".ToDoActivity"
+            android:label="@string/todo_list" />
+        <activity
+            android:name=".firsttriActivity"
+            android:label="@string/_1st_trimester" />
+        <activity
+            android:name=".sectriActivity"
+            android:label="@string/_2nd_trimester" />
+        <activity
+            android:name=".thirdtriActivity"
+            android:label="@string/_3rd_trimester" />
+        <activity
+            android:name=".BabyActivity"
+            android:label="@string/title_activity_baby"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DActivity"
+            android:label="@string/danger" />
+        <activity
+            android:name=".MKActivity"
+            android:label="@string/must_know" />
+        <activity
+            android:name=".HLActivity"
+            android:label="@string/helpline" />
+        <activity
+            android:name=".CaActivity"
+            android:label="@string/calendar" />
+        <activity
+            android:name=".EntryActivity"
+            android:label="@string/title_activity_pl" />
+        <activity android:name=".ProfileActivity" />
         <activity
             android:name=".PLActivity"
-            android:label="@string/title_activity_pl"
+            android:label="@string/pregnant_lady" />
+        <activity
+            android:name=".VerifyPhoneActivity"
+            android:label="@string/enter_verification_code" />
+        <activity
+            android:name=".PersonActivity"
+            android:label="@string/personal_details" />
+        <activity
+            android:name=".BabyinfoActivity"
+            android:label="@string/baby_information" />
+        <activity
+            android:name=".ImmunisationActivity"
+            android:label="@string/immunisation" />
+        <activity
+            android:name=".ANCHighRiskActivity"
+            android:label="@string/high_risk" />
+        <activity
+            android:name=".FamilyPlanningActivity"
+            android:label="@string/family_planning" />
+        <activity
+            android:name=".LRPostActivity"
+            android:label="@string/low_risk" />
+        <activity
+            android:name=".LRPregcamctivity"
+            android:label="@string/Photo" />
+        <activity
+            android:name=".LRPregnantActivity"
+            android:label="@string/low_risk" />
+        <activity
+            android:name=".NavDrawerActivity"
+            android:label="@string/asha_aww" />
+        <activity
+            android:name=".VaccinationActivity"
+            android:label="@string/vaccination" />
+        <activity
+            android:name=".PNCHighRiskActivity"
+            android:label="@string/post_natal" />
+        <activity android:name=".VideosActivity" />
+        <activity
+            android:name=".ANM_NavDrawerActivity"
+            android:label="@string/title_activity_nav_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CalActivity" />
-        <activity android:name=".HelpLineActivity" />
-        <activity android:name=".DangerActivity" />
-        <activity android:name=".MustKnowActivity" />
-        <activity android:name=".RaActivity" />
-        <activity android:name=".ToDoActivity" />
-        <activity android:name=".firsttriActivity" />
-        <activity android:name=".sectriActivity" />
-        <activity android:name=".thirdtriActivity"></activity>
+        <activity
+            android:name=".ANM_VaccinationActivity"
+            android:label="@string/vaccination" />
+        <activity
+            android:name=".Doc_ANCHighRiskActivity"
+            android:label="@string/high_risk" />
+        <activity
+            android:name=".ANM_PNCHighRiskActivity"
+            android:label="@string/high_risk" />
+        <activity
+            android:name=".ANM_CatalogueActivity"
+            android:label="@string/catalogue" />
+        <activity
+            android:name=".ANM_HRWomanActivity"
+            android:label="@string/high_risk" />
+        <activity
+            android:name=".ANM_PNCLowRiskActivity"
+            android:label="@string/low_risk" />
+        <activity
+            android:name=".Doc_ANCLowRiskActivity"
+            android:label="@string/low_risk" />
+        <activity
+            android:name=".Doc_LRWomanActivity"
+            android:label="Low Risk" />
+        <activity
+            android:name=".Doc_HRWomanActivity"
+            android:label="@string/high_risk" />
+        <activity android:name=".ANM_LoginActivity" />
+        <activity
+            android:name=".Doc_NavActivity"
+            android:label="Doctor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ReferredActivity"
+            android:label="Referred cases"/>
+        <activity android:name=".OutcomeActivity"
+            android:label="Referred cases"></activity>
     </application>
 
 </manifest>

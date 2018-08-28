@@ -16,7 +16,7 @@
         android:layout_marginLeft="0dp"
         android:layout_marginStart="0dp"
         android:layout_marginTop="17dp"
-        android:text="Call any of two numbers if you have any problem!"
+        android:text="@string/call_any_of_two_numbers_if_you_have_any_problem"
         android:textSize="20dp" />
 
     <ImageButton
@@ -26,7 +26,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="140dp"
-        android:src="@drawable/ic_phone_black_24dp"
+        android:background="@drawable/mybutton"
+        app:srcCompat="@drawable/ic_phone_black_24dp"
         android:layout_alignParentLeft="true" />
 
     <ImageButton
@@ -35,7 +36,8 @@
         android:layout_height="61dp"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/ic_phone_black_24dp"
+        android:background="@drawable/mybutton4"
+        app:srcCompat="@drawable/ic_phone_black_24dp"
         android:layout_alignParentLeft="true" />
 
     <TextView
@@ -48,7 +50,7 @@
         android:layout_marginLeft="141dp"
         android:layout_marginStart="141dp"
         android:layout_marginTop="160dp"
-        android:text="Click Here"
+        android:text="@string/click_here"
         android:textSize="20dp"
         tools:ignore="HardcodedText" />
 
@@ -59,6 +61,6 @@
         android:layout_alignLeft="@+id/textView3"
         android:layout_alignStart="@+id/textView3"
         android:layout_centerVertical="true"
-        android:text="Click Here!"
+        android:text="@string/click_here"
         android:textSize="20dp" />
 </RelativeLayout>

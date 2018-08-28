@@ -13,23 +13,26 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="129dp"
-        android:text="3rd Trimester" />
+        android:background="@drawable/mybutton2"
+        android:text="@string/_3rd_trimester" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button200"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="89dp"
-        android:text="1st Trimester" />
+        android:background="@drawable/mybutton"
+        android:text="@string/_1st_trimester" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button300"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="210dp"
-        android:text="2nd Trimester" />
+        android:background="@drawable/mybutton4"
+        android:text="@string/_2nd_trimester" />
 </RelativeLayout>

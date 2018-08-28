@@ -4,7 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalActivity">
+    tools:overrideLibrary="sun.bob.mcalendarview"
+    tools:context=".CalActivity"
+    android:orientation="vertical">
 
 
+
+
+    <CalendarView
+        android:id="@+id/simpleCalendarView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:firstDayOfWeek="2"
+        android:maxDate="01/01/2019"
+        android:minDate="01/01/2017" />
 </RelativeLayout>

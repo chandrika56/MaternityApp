@@ -1,37 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
 
+    tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_s"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/personal_details" />
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_warning_black_24dp"
-            android:title="Risk Assessment" />
+            android:title="@string/risk_assessment" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_toc_black_24dp"
-            android:title="To Do List" />
+            android:title="@string/todo_list" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_error_black_24dp"
-            android:title="Danger" />
+            android:title="@string/danger" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_event_note_black_24dp"
-            android:title="Must Know" />
+            android:title="@string/must_know" />
         <item
             android:id="@+id/nav_share"
             android:icon="@drawable/ic_child_care_black_24dp"
-            android:title="Baby" />
+            android:title="@string/baby" />
         <item
             android:id="@+id/nav_send"
             android:icon="@drawable/ic_contact_phone_black_24dp"
-            android:title="HelpLine" />
+            android:title="@string/helpline" />
         <item
             android:id="@+id/nav_se"
             android:icon="@drawable/ic_filter_frames_black_24dp"
-            android:title="Calendar" />
+            android:title="@string/calendar" />
+        <item
+            android:id="@+id/nav_vid"
+            android:icon="@drawable/ic_movie_filter_black_24dp"
+            android:title="Videos" />
+
     </group>
 
 

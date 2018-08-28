@@ -35,7 +35,7 @@ public class PLActivity extends AppCompatActivity
 
         DrawerLayout drawer = (DrawerLayout) findViewById (R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle (
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer,toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener (toggle);
         toggle.syncState ( );
 
@@ -81,6 +81,7 @@ public class PLActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId ( );
 
+
         if (id == R.id.nav_camera) {
             startActivity (new Intent (this,RaActivity.class));
         } else if (id == R.id.nav_gallery) {
@@ -91,6 +92,7 @@ startActivity (new Intent (this,DangerActivity.class));
             startActivity (new Intent (this,MustKnowActivity.class));
 
         } else if (id == R.id.nav_share) {
+            startActivity (new Intent (this,BabyActivity.class));
 
         } else if (id == R.id.nav_send) {
 startActivity (new Intent (this,HelpLineActivity.class));
@@ -98,6 +100,14 @@ startActivity (new Intent (this,HelpLineActivity.class));
         else if(id==R.id.nav_se) {
             startActivity (new Intent (this,CalActivity.class));
         }
+
+        else if(id==R.id.nav_s) {
+            startActivity (new Intent (this,PersonActivity.class));
+        }
+        else if(id==R.id.nav_vid) {
+            startActivity (new Intent (this,VideosActivity.class));
+        }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById (R.id.drawer_layout);
         drawer.closeDrawer (GravityCompat.START);
